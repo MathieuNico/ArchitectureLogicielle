@@ -26,7 +26,14 @@ Dans une architecture orientée événements, les composants du système communi
 
 ## Exemples d'Utilisateurs
 
-- **Netflix** : utilise une architecture orientée événements pour gérer la diffusion de contenu, la recommandation personnalisée et la résilience du service.
+
+### Avantages pour Netflix
+
+- **Traçabilité améliorée** : la traçabilité des services a réduit les divergences de données dans l’ensemble du système.
+- **État synchronisé** : l’approche pilotée par les événements a permis de synchroniser différents services, garantissant l’uniformité des données en temps réel.
+- **Traitement efficace des données** : la nouvelle structure a accéléré le traitement des données et fourni à Netflix des informations commerciales instantanées et précises.
+- **Flexibilité du système** : le découplage de l'architecture a renforcé la résilience et l’adaptabilité, essentielles pour une plateforme en constante évolution comme Netflix.
+
 
 ![Architecture orientée événements chez Netflix](image_netflix.png)
 
