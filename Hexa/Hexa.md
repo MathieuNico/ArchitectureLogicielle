@@ -1,4 +1,4 @@
-# Monolithique
+# Exa
 
 L’architecture hexagonale est un pattern architectural dont le but est de rendre la logique métier (le « cœur » de l’application) indépendante des détails techniques externes (interface utilisateur, base de données, infrastructure, etc.). Elle découpe l’application selon des ports (interfaces abstraites) et des adaptateurs (implémentations concrètes), pour que le cœur puisse interagir avec l’extérieur sans connaître les technologies utilisées
 
