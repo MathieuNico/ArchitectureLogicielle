@@ -1,0 +1,55 @@
+1. Qu’est-ce que les microservices ?
+
+Une architecture microservices est un style architectural dans lequel une application est composée de plusieurs petits 
+services autonomes, faiblement couplés, qui communiquent entre eux via des interfaces légères (APIs, messages). 
+Chaque microservice implémente une capacité métier spécifique. 
+
+
+Quelques points clés :
+Chaque service est indépendamment déployable — tu peux faire évoluer ou redéployer un service sans toucher aux autres. 
+
+Les services sont organisés autour des domaines métier (par exemple « commande », « facturation », « utilisateur », etc.).
+
+Chaque microservice doit avoir une base de données propre ou une gestion de données autonome, afin d’éviter les dépendances 
+directes entre services. 
+
+Communication via des protocoles légers : REST/HTTP, gRPC, files de messages, événements, etc. 
+
+Autonomie technologique : chaque service peut être implémenté dans une technologie ou langage différent 
+selon ce qui est le plus adapté. 
+
+Pourquoi ce style est apparu ? 
+Parce que les architectures monolithiques (où tout le logiciel est dans un seul bloc) posent des problèmes 
+quand le système devient gros : déploiement coûteux, couplages forts, difficulté à faire évoluer seulement une partie, 
+temps d’arrêt, etc. Microservices offrent un découpage pour regagner en modularité et en flexibilité.
+
+
+2. Caractéristiques, avantages & inconvénients
+✅ Avantages / caractéristiques positives
+
+Voici une liste de caractéristiques et les bénéfices qu’elles apportent :
+
+Caractéristique / propriété	Bénéfice / raison d’être
+Modularité (services autour d’un domaine métier)	Le code est mieux organisé, plus compréhensible et chaque module est compact
+Déploiement indépendant	On peut mettre à jour un service sans redéployer tout le système
+Scalabilité fine	On peut faire évoluer (scale) uniquement le service qui en a besoin, pas tout l’environnement 
+
+Tolérance aux pannes / isolation des erreurs	Si un service tombe, les autres peuvent continuer à fonctionner (si bien conçu) 
+
+Technologie hétérogène	Chaque service peut utiliser le langage, le framework ou la base de données la plus adaptée 
+
+Autonomie d’équipe	Chaque microservice peut être confié à une équipe dédiée, avec plus de liberté 
+
+Évolution & maintenance facilitées	On peut refactoriser ou migrer un service sans impacter tout le système
+Alignement DDD / bounded contexts	La notion de “contexte borné” de DDD s’accorde bien avec les microservices 
+pour découper le domaine 
+
+source :
+chatGPT
+Wikipédia
+microservices.io
+Microsoft Learn
+Amazon Web Services, Inc.
+Atlassian
+Red Hat
+Google Cloud
